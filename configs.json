@@ -1,0 +1,146 @@
+{
+    "files": {
+        "0": {
+            "config_id": "0",
+            "filemask": "FIDPOS[0-9]{8}.TXT",
+            "kind": "holding",
+            "delimiter": "",
+            "headers": "",
+            "trailers": "",
+            "aggregation": "shares",
+            "has_price": "True"
+        },
+        "1": {
+            "config_id": "0",
+            "filemask": "FIDTRD[0-9]{8}.TXT",
+            "kind": "transaction",
+            "delimiter": "",
+            "headers": "",
+            "trailers": "",
+            "aggregation": "",
+            "has_price": "True"
+        },
+        "2": {
+            "config_id": "1",
+            "filemask": "^.{1,}_ACCOUNTS_[0-9]{8}.TXT",
+            "kind": "account",
+            "delimiter": "",
+            "headers": "",
+            "trailers": "",
+            "aggregation": "",
+            "has_price": ""
+        },
+        "3": {
+            "config_id": "1",
+            "filemask": "^.{1,}_POSITIONS_[0-9]{8}.TXT",
+            "kind": "holding",
+            "delimiter": "|",
+            "headers": "",
+            "trailers": "",
+            "aggregation": "",
+            "has_price": "False"
+        },
+        "4": {
+            "config_id": "1",
+            "filemask": "^.{1,}_TRANSACTIONS_[0-9]{8}.TXT",
+            "kind": "transaction",
+            "delimiter": "|",
+            "headers": "",
+            "trailers": "",
+            "aggregation": "",
+            "has_price": "True"
+        },
+        "5": {
+            "config_id": "2",
+            "filemask": "^vprd_.{1,}_prdesc_da_[0-9]{8}",
+            "kind": "account",
+            "delimiter": "|",
+            "headers": "1",
+            "trailers": "1",
+            "aggregation": "",
+            "has_price": ""
+        },
+        "6": {
+            "config_id": "2",
+            "filemask": "^vprd_.{1,}_prdesc_dp_[0-9]{8}",
+            "kind": "holding",
+            "delimiter": "|",
+            "headers": "1",
+            "trailers": "1",
+            "aggregation": "shares",
+            "has_price": "True"
+        },
+        "7": {
+            "config_id": "2",
+            "filemask": "^vprd_.{1,}_prdesc_dt_[0-9]{8}",
+            "kind": "transaction",
+            "delimiter": "|",
+            "headers": "1",
+            "trailers": "1",
+            "aggregation": "",
+            "has_price": "True"
+        },
+        "8": {
+            "config_id": "3",
+            "filemask": "C11_Employee401k_Holdings_\\d{8}.csv",
+            "kind": "holding",
+            "delimiter": ",",
+            "headers": "1",
+            "trailers": "",
+            "aggregation": "shares",
+            "has_price": "True"
+        },
+        "9": {
+            "config_id": "3",
+            "filemask": "C11_Employee401k_Transactions_\\d{8}.csv",
+            "kind": "transaction",
+            "delimiter": ",",
+            "headers": "1",
+            "trailers": "",
+            "aggregation": "",
+            "has_price": "True"
+        },
+		"10": {
+            "config_id": "4",
+            "filemask": "Holdings Sample file.csv",
+            "kind": "holding",
+            "delimiter": ",",
+            "headers": "1",
+            "trailers": "",
+            "aggregation": "",
+            "has_price": "True"
+		},
+		"11": {
+            "config_id": "4",
+            "filemask": "Transaction Sample file.csv",
+            "kind": "transaction",
+            "delimiter": ",",
+            "headers": "1",
+            "trailers": "",
+            "aggregation": "",
+            "has_price": "True"
+		}
+    },
+    "configs": {
+        "0": {
+            "customer": "Relay",
+            "broker": "Fidelity"
+        },
+        "1": {
+            "customer": "",
+            "broker": "Robinhood"
+        },
+        "2": {
+            "customer": "",
+            "broker": "Vanguard"
+        },
+        "3": {
+            "customer": "",
+            "broker": "TransAmerica"
+        },
+		"4": {
+			"customer": "",
+			"broker": "SunTrust Investment Services"
+		}
+    }
+}
